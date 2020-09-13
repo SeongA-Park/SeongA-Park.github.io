@@ -1414,7 +1414,7 @@ a.newer-posts:hover {
   }
   .sidebar nav {
     width: 220.02px;
-    height: 300px;
+    height: 100%;
   }
   .sidebar footer {
     margin-bottom: 10px;
