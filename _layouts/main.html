@@ -15,7 +15,8 @@ layout: default
   <!-- categories -->
   <!-- Modified date: 2020.09.14 -->
   <nav>
-    <div class="category">
+    <section class="category">
+      <h3 class="category">Categories</h3>
       {% for category in site.categories %}
       {% capture name_category %}{{ category | first }}{% endcapture %}
       <ul>
@@ -24,7 +25,7 @@ layout: default
         </li>
       </ul>
       {% endfor %}
-    </div>
+    </section>
   </nav> <!-- End Nav -->
   <footer>
     <section class="contact">
