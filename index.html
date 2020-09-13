@@ -4,6 +4,28 @@ layout: main
 {% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign category_words = site_categories | split:',' | sort %}
 
+{% if page.type %}
+<div class="page_category">
+  <p class="category_type">{{ page.type }}</p>
+  <ul>
+    {% for post in site.categories[page.type] %}
+    {% if post.url %}
+    <li>
+        <time class='post_date' datetime='{{ post.date | date_to_xmlschema }}'>
+          {{ post.date | date: "%b %-d, %Y" }}
+        </time>
+        <div class='post_title'>
+          <a href='{{ post.url | relative_url }}'>
+            {{ post.title | escape }}
+          </a>
+        </div>
+      </li>
+    {% endif %}
+    {% endfor %}
+
+  </ul>
+</div>
+
 {% for post in paginator.posts %}
 <article class="post">
   {% if post.img %}
