@@ -21,7 +21,7 @@ layout: default
       {% for category in site.categories %}
       {% capture name_category %}{{category | first}}{% endcapture %}
         <li class="category_list">
-          <a href="{{site.baseurl}}/categories/{{name_category}}">{{name_category}}({{ category | last | size }})</a>
+          <a href="{{site.baseurl}}/categories/{{name_category}}" id="aa">{{name_category}}({{ category | last | size }})</a>
         </li>
       </ul>
       {% endfor %}
