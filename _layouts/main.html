@@ -18,7 +18,7 @@ layout: default
     <section class="category">
       <h3 class="category">Categories</h3>
       {% for category in site.categories %}
-      {% capture name_category %}{% endcapture %}
+      {% capture name_category %}{{category | first}}{% endcapture %}
       <ul>
         <li class="category_list">
           <a href="{{site.baseurl}}/categories/{{name_category}}">{{name_category}}</a>
