@@ -11,11 +11,11 @@ permalink: /categories/
   <ul class="categories">
 <!--  cycles through tag list and creates header row of all tags used in site with accompanying per-tag counts...-->
   {% for this_word in category_words %}
-    <li ><a href="#{{ this_word | cgi_escape }}" class="Category">{{ this_word }} <span>({{ site.Categories[this_word].size }})</span></a></li>
+    <li ><a href="#{{ this_word | cgi_escape }}" class="Category">{{ this_word }} <span>({{ site.categories[this_word].size }})</span></a></li>
   {% endfor %}
   </ul>
 <!--cycles through tag list and creates subheader for each tag name...-->
-  {% for this_word in Category_words %}
+  {% for this_word in category_words %}
   <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
 <!--  lists all posts corresponding to specific tag...-->
     {% for post in site.categories[this_word] %}{% if post.title != null %}
