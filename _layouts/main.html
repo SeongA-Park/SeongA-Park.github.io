@@ -15,13 +15,13 @@ layout: default
   <!-- categories -->
   <!-- Modified date: 2020.09.14 -->
   <nav>
-    <section class="category">
-      <h3 class="category">Categories</h3>
+    <section class="nav">
+      <h3 class="category-title">Categories</h3>
+      <ul class="category">
       {% for category in site.categories %}
       {% capture name_category %}{{category | first}}{% endcapture %}
-      <ul>
         <li class="category_list">
-          <a href="{{site.baseurl}}/categories/{{name_category}}">{{name_category}}</a>
+          <a href="{{site.baseurl}}/categories/{{name_category}}">{{name_category}}({{ category | last | size }})</a>
         </li>
       </ul>
       {% endfor %}
