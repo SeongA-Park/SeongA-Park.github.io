@@ -5,8 +5,6 @@ permalink: /categories/
 {% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign category_words = site_categories | split:',' | sort %}
 
-<section class="selected category">
-  <h1>{{ page.title }}</h1>
 
 <!--  lists all posts corresponding to specific tag...-->
   {% for post in site.categories[page.title] %}{% if post.title != null %}
