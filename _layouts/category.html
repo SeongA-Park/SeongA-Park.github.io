@@ -7,7 +7,7 @@ permalink: /categories/
 {% assign category_words = site_categories | split:',' | sort %}
 
 <section class="selected category">
-  <h id="{{ page.type | cgi_escape }}">{{ page.type }}</h>
+  <h1 id="{{ page.type | cgi_escape }}">{{ page.type }}</h1>
 
 <!--  lists all posts corresponding to specific tag...-->
   {% for post in site.categories[page.type] %}{% if post.title != null %}
