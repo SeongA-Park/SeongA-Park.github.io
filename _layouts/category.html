@@ -10,13 +10,12 @@ permalink: /categories/
 
 <section class="blog-categories">
   <h1>{{category_word}}</h1>
-  <ul class="categories">
 
 <!--  lists all posts corresponding to specific tag...-->
-{% for post in site.categories[category_word] %}{% if post.title != null %}
-  <div class="posts-list">
-      <span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
-      <small><span>| {{ post.date | date_to_string }}</span></small>
-  </div>
-{% endfor %}
+  {% for post in site.categories[category_word] %}{% if post.title != null %}
+    <div class="posts-list">
+        <span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
+        <small><span>| {{ post.date | date_to_string }}</span></small>
+    </div>
+  {% endfor %}
 </section>
