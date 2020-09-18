@@ -9,20 +9,16 @@ permalink: /categories/
 <section class="blog-categories">
   <h1>Categories in Blog</h1>
   <ul class="categories">
-<!--  cycles through tag list and creates header row of all tags used in site with accompanying per-tag counts...-->
-  {% for this_word in category_words %}
-    <li ><a href="{{ this_word | cgi_escape }}" class="category">{{ this_word }} <span>({{ site.categories[this_word].size }})</span></a></li>
-  {% endfor %}
-  </ul>
+
 <!--cycles through tag list and creates subheader for each tag name...-->
-  {% for this_word in category_words %}
-  <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
+{% for this_word in category_words %}
+<h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
 <!--  lists all posts corresponding to specific tag...-->
-    {% for post in site.categories[this_word] %}{% if post.title != null %}
-    <div class="Category-list">
-        <span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
-        <small><span>| {{ post.date | date_to_string }}</span></small>
-    </div>
-    {% endif %}{% endfor %}
-  {% endfor %}
+{% for post in site.categories[this_word] %}{% if post.title != null %}
+  <div class="Category-list">
+      <span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
+      <small><span>| {{ post.date | date_to_string }}</span></small>
+  </div>
+  {% endif %}{% endfor %}
+{% endfor %}
 </section>
