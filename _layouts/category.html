@@ -8,8 +8,8 @@ permalink: /categories/
 
 {% assign category_word = page.title %}
 
-<section class="blog-categories">
-  <h1>{{category_word}}</h1>
+<section class="selected category">
+  <h2 id="{{ category_word | cgi_escape }}">{{ category_word }}</h2>
 
 <!--  lists all posts corresponding to specific tag...-->
   {% for post in site.categories[category_word] %}{% if post.title != null %}
