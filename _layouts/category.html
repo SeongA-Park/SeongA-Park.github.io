@@ -7,5 +7,11 @@ layout: main
 <section class="selected category">
   <h1 class="category_title">{{ page.title }}</h1>
 
-
+  <!--  lists all posts corresponding to specific tag...-->
+  {% for post in site.categories[page.title] %}{% if post.title != null %}
+  <div class="posts-list">
+      <span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
+      <small><span>| {{ post.date | date_to_string }}</span></small>
+  </div>
+  {% endif %}{% endfor %}
 </section>
