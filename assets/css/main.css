@@ -1021,6 +1021,10 @@ table tfoot td {
           align-items: stretch;
 }
 
+.nav {
+  position: absolute;
+  top: 0;
+}
 .nav ul {
   margin:0;
   padding: 0;
