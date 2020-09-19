@@ -1023,6 +1023,7 @@ table tfoot td {
 
 .nav {
   margin-top: 20px;
+  height: 300px;
 }
 
 .nav .category-title {
