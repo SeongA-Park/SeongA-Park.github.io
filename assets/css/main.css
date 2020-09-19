@@ -1021,11 +1021,31 @@ table tfoot td {
           align-items: stretch;
 }
 
-.contact .contact-title {
+.nav .category-title {
   position: relative;
   color: #333030;
   font-weight: 400;
   font-size: 12px;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav .category_list {
+  position: relative;
+  color: #333030;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contact .contact-title {
+  position: relative;
+  color: #333030;
+  font-weight: 400;
+  font-size: 20px;
   margin: 0 0 5px;
   text-transform: uppercase;
   text-align: center;
