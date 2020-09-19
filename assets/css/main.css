@@ -1452,7 +1452,7 @@ a.newer-posts:hover {
   }
   .nav .category_list {
     float: left;
-    margin-left: auto;
+    margin-left: 20px;
   }
   .content-box {
     padding: 20px 10px;
