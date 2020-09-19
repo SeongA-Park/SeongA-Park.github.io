@@ -1021,14 +1021,17 @@ table tfoot td {
           align-items: stretch;
 }
 
+.nav {
+  margin-top: 20px;
+}
+
 .nav .category-title {
   position: relative;
   color: #333030;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 12px;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -1036,10 +1039,9 @@ table tfoot td {
   position: relative;
   color: #333030;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 13px;
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
   text-align: center;
   list-style-type: none;
 }
