@@ -1026,6 +1026,7 @@ table tfoot td {
   margin-top: 0.5rem;
   text-align: center;
   left: 50%;
+  transform: translate(-50%);
 }
 .nav ul {
   margin:0;
