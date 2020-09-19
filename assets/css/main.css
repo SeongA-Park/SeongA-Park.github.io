@@ -1030,13 +1030,13 @@ table tfoot td {
   color: #333030;
   font-weight: 400;
   font-size: 13px;
-  margin: 0;
+  margin-top: 0;
   padding: 0;
   text-align: center;
 }
 
 .nav .category_list {
-  position: relative;
+  display: inline-block;
   color: #333030;
   font-weight: 400;
   font-size: 14px;
