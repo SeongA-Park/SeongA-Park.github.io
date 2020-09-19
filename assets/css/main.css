@@ -1024,6 +1024,7 @@ table tfoot td {
 .nav {
   position: absolute;
   margin-top: 1rem;
+  text-align: center;
 }
 .nav ul {
   margin:0;
@@ -1037,7 +1038,6 @@ table tfoot td {
   font-size: 13px;
   margin-top: 0;
   padding: 0;
-  text-align: center;
 }
 
 .nav .category_list {
