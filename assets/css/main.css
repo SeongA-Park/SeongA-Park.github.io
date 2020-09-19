@@ -1025,8 +1025,9 @@ table tfoot td {
   position: relative;
   color: #333030;
   font-weight: 400;
-  font-size: 12px;
-  margin: 0 0 5px;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
   text-align: center;
 }
@@ -1036,16 +1037,18 @@ table tfoot td {
   color: #333030;
   font-weight: 400;
   font-size: 15px;
-  margin: 0 0 5px;
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
   text-align: center;
+  list-style-type: none;
 }
 
 .contact .contact-title {
   position: relative;
   color: #333030;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 12px;
   margin: 0 0 5px;
   text-transform: uppercase;
   text-align: center;
