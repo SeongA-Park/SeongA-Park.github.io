@@ -1,0 +1,13 @@
+---
+layout: post
+title: "블로그 개설"
+date: 2020-09-19 21:40:00 +0300
+description:  테스트 첫 글# Add post description (optional)
+img:  # Add image post (optional)
+category: [BLog]
+---
+블로그 만들고 처음으로 쓰는 글!
+
+원래 있는 테마 가져오는 것 까지는 문제 없었는데 카테고리 한 번 만들어 보겠다고 이리저리 검색하고 해보느라 시간을 잡아먹은 탓에 많이 첫 글이 많이 늦어졌다.
+
+잘 올라가길!
