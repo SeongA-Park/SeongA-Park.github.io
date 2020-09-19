@@ -4,7 +4,7 @@ title: "블로그 개설"
 date: 2020-09-19 21:40:00 +0300
 description:  테스트 첫 글# Add post description (optional)
 img:  # Add image post (optional)
-category: [BLog]
+category: [Blog]
 ---
 블로그 만들고 처음으로 쓰는 글!
 
