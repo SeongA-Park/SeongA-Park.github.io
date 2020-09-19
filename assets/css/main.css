@@ -1447,7 +1447,7 @@ a.newer-posts:hover {
             box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
   }
   .sidebar footer {
-    margin-top: 58px;
+    margin-top: 55px;
     margin-bottom: 10px;
   }
   .about {
@@ -1464,7 +1464,7 @@ a.newer-posts:hover {
   }
   .nav .category_list {
     float: left;
-    margin-top: 2px;
+    margin-top: 1px;
     margin-left: 20px;
   }
   .content-box {
