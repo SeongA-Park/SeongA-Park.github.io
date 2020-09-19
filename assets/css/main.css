@@ -1450,7 +1450,7 @@ a.newer-posts:hover {
             border-radius: 100%;
     margin-bottom: 10px;
   }
-  .nav category_list {
+  .nav .category_list {
     float: left;
     margin-left: auto;
   }
