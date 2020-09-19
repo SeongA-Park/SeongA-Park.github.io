@@ -1450,6 +1450,10 @@ a.newer-posts:hover {
             border-radius: 100%;
     margin-bottom: 10px;
   }
+  .nav category_list {
+    float: left;
+    margin-left: auto;
+  }
   .content-box {
     padding: 20px 10px;
     display: -webkit-box;
