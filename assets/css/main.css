@@ -1447,6 +1447,7 @@ a.newer-posts:hover {
             box-shadow: 0 1px 1px 0 rgba(31, 35, 46, 0.15);
   }
   .sidebar footer {
+    margin-top: 20px;
     margin-bottom: 10px;
   }
   .about {
